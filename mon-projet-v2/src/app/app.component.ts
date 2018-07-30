@@ -9,6 +9,10 @@ export class AppComponent {
   title = 'Mon Projet Angular V2 - wow !';
   isAuth = false;
 
+  appareilOne = 'Machine à laver';
+  appareilTwo = 'Frigo';
+  appareilThree = 'Ordinateur';
+
   constructor() {
     setTimeout(
       () => {
