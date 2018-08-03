@@ -13,4 +13,10 @@
        {{ getCreated() | date: short }}
      </div>
   </div>
+  <div class="row">
+    <button class="btn btn-success"
+            (click)="onHits(true)">Super !!</button>&nbsp;
+    <button class="btn btn-danger"
+            (click)="onHits(false)">Bof !!</button>
+  </div>
 </li>

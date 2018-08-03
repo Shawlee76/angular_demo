@@ -22,6 +22,10 @@ export class PostComponent implements OnInit {
   getColor() {
     return (this.postHits > 0 ? 'success' : (this.postHits < 0 ? 'danger' : 'default'));
   }
+
+  onHits(confirm) {
+    this.postHits += confirm ? 1 : -1 ;
+  }
   ngOnInit() {
   }
 }
