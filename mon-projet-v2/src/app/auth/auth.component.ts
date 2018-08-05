@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../services/auth.service';
+import {AuthService} from '../services/auth.service';
 import {Router} from '@angular/router';
 
 @Component({
@@ -31,4 +31,6 @@ export class AuthComponent implements OnInit {
     this.authService.signOut();
     this.authStatus = this.authService.isAuth;
   }
+
+
 }
